@@ -66,27 +66,27 @@ const getEmployees = async () => {
         type: 'text',
         name: 'officeNumber',
         message: 'What is your office number?'
-      }).then(({ position, name, id, email, github, school, officeNumber }) => {
-        this.Manager = new Employee(position)
-        this.Manager = new Employee(name)
-        this.Manager = new Employee(id)
-        this.Manager = new Employee(officeNumber)
-        this.Manager = new Employee(email);
+      }).then(({ position, name, id, email, officeNumber }) => {
+        this.Manager = new Manager(position)
+        this.Manager = new Manager(name)
+        this.Manager = new Manager(id)
+        this.Manager = new Manager(officeNumber)
+        this.Manager = new Manager(email);
       })
 
       employees.push(Manager);
-      console.log(employees)
+      console.log(new Manager)
     } else if (position === 'Engineer') {
       await inquirer.prompt({
         type: 'text',
         name: 'github',
         message: 'What is your github user name?'
-      }).then(({ position, name, id, email, github, school, officeNumber }) => {
-        this.Manager = new Employee(position)
-        this.Manager = new Employee(name)
-        this.Manager = new Employee(id)
-        this.Manager = new Employee(github)
-        this.Manager = new Employee(email);
+      }).then(({ position, name, id, email, github }) => {
+        this.Engineer = new Engineer(position)
+        this.Engineer = new Engineer(name)
+        this.Engineer = new Engineer(id)
+        this.Engineer = new Engineer(github)
+        this.Engineer = new Engineer(email);
       })
 
       employees.push(Engineer);
@@ -97,12 +97,12 @@ const getEmployees = async () => {
         type: 'text',
         name: 'school',
         message: 'What is your school?'
-      }).then(({ position, name, id, email, github, school, officeNumber }) => {
-        this.Manager = new Employee(position)
-        this.Manager = new Employee(name)
-        this.Manager = new Employee(id)
-        this.Manager = new Employee(school)
-        this.Manager = new Employee(email);
+      }).then(({ position, name, id, email, school }) => {
+        this.Intern = new Intern(position)
+        this.Intern = new Intern(name)
+        this.Intern = new Intern(id)
+        this.Intern = new Intern(school)
+        this.Intern = new Intern(email);
       })
 
       employees.push(Intern);
@@ -121,5 +121,5 @@ const getEmployees = async () => {
   }
 };
 getEmployees().then(() => {
-  console.log(employees);
+  console.log(employees.toString());
 });
