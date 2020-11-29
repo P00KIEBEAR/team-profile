@@ -17,9 +17,9 @@ function generatePage(Employees) {
     internForm = `<div class="col-2 mx-auto">
   <h3>${internForm.getPosition()}</h3>
   <p>${internForm.getName()}</p>
-  <p>${internForm.getId()}</p>
+  <p>ID:${internForm.getId()}</p>
    <a href="mailto:${internForm.getEmail()}"> Email: ${internForm.getEmail()}</a>
-   <p>${internForm.getSchool()}<p>
+   <p>School:${internForm.getSchool()}<p>
    </div>
    `
     return internForm
@@ -29,7 +29,7 @@ function generatePage(Employees) {
     engineerForm = `<div class="col-2 mx-auto">
   <h3>${engineerForm.getPosition()}</h3>
   <p>${engineerForm.getName()}</p>
-  <p>${engineerForm.getId()}</p>
+  <p>ID:${engineerForm.getId()}</p>
    <a href="mailto:${engineerForm.getEmail()}"> Email: ${engineerForm.getEmail()}</a>
    <a href="https://github.com/${engineerForm.getGithub()}"><img src="./dist/images/github.png" height="36px" /></a>
    </div>
@@ -41,9 +41,9 @@ function generatePage(Employees) {
     managerForm = `<div class="col-2 mx-auto">
   <h3>${managerForm.getPosition()}</h3>
   <p>${managerForm.getName()}</p>
-  <p>${managerForm.getId()}</p>
+  <p>ID:${managerForm.getId()}</p>
    <a href="mailto:${managerForm.getEmail()}"> Email: ${managerForm.getEmail()}</a>
-      <p>${managerForm.getOfficeNumber()}<p>
+      <p>Office Number#${managerForm.getOfficeNumber()}<p>
    </div>
    `
     return managerForm
