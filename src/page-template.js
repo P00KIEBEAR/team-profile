@@ -31,8 +31,8 @@ function generatePage(Employees) {
   <p>${engineerForm.getName()}</p>
   <p>${engineerForm.getId()}</p>
    <a href="mailto:${engineerForm.getEmail()}"> Email: ${engineerForm.getEmail()}</a>
-      <p>${engineerForm.getGithub()}<p>
-      </div>
+   <a href="https://github.com/${engineerForm.getGithub()}"><img src="./dist/images/github.png" height="36px" /></a>
+   </div>
    `
     return engineerForm
   })
@@ -69,9 +69,9 @@ function generatePage(Employees) {
        <main class="flex-row justify-space-between">
        <div class="container m-0">
             <div class="row card-5 " id="team">
-            ${managerForm}
-            ${engineerForm}
-            ${internForm}
+            ${managerForm.join('\n')}
+            ${engineerForm.join('\n')}
+            ${internForm.join('\n')}
             </div>
        </div>
  
