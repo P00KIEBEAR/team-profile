@@ -31,7 +31,7 @@ function generatePage(Employees) {
   <p>${engineerForm.getName()}</p>
   <p>ID:${engineerForm.getId()}</p>
    <a href="mailto:${engineerForm.getEmail()}"> Email: ${engineerForm.getEmail()}</a>
-   <a href="https://github.com/${engineerForm.getGithub()}"><img src="./dist/images/github.png" height="36px" /></a>
+   <a href="https://github.com/${engineerForm.getGithub()}"><img src="./src/images/github.png" height="36px" /></a>
    </div>
    `
     return engineerForm
@@ -57,7 +57,7 @@ function generatePage(Employees) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./dist/style.css" />
+    <link rel="stylesheet" href="./src/style.css" />
     <title>MY TEAM</title>
   </head>
   
@@ -77,7 +77,7 @@ function generatePage(Employees) {
  
  
       </main>
-     <script src="/.dist/script.js"></script>
+     <script src="/.src/script.js"></script>
     </body>
     </html>
         
